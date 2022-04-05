@@ -1,0 +1,17 @@
+name: Qodana - License Audit
+on:
+  workflow_dispatch:
+jobs:
+  qodana:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Qodana - License Audit
+        uses: jetbrains/qodana-license-audit-action@main
+        with:
+          options: PYTHON_VERSION=3.7.10
+      
+      - uses: actions/upload-artifact@v2
+        with:
+          path: ${{ github.workspace }}/qodana
