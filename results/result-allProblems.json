@@ -1,0 +1,28 @@
+{
+  "version": 3,
+  "listProblem": [
+    {
+      "category": "License Compliance",
+      "hash": 804516532007630125,
+      "tags": [
+        "LICENSE: Apache-2.0",
+        "LICENSE: BSD-2-Clause-Views"
+      ],
+      "attributes": {
+        "module": "",
+        "inspectionName": "UncategorizedDependencyLicense"
+      },
+      "severity": "High",
+      "type": "Uncategorized dependency license",
+      "detailsInfo": "Check the [dependency](https://www.npmjs.com/package/uri-js) licenses and either remove the dependency or [add its licenses to the allowed list](https://www.jetbrains.com/help/qodana/?LA-Output#UncategorizedDependencyLicense): project license Apache-2.0, dependency license BSD-2-Clause-Views",
+      "tool": "License Audit",
+      "comment": "uri-js (4.4.1) BSD 2-Clause with views sentence is not in the allowed or the prohibited license lists",
+      "sources": [
+        {
+          "type": "module",
+          "path": ""
+        }
+      ]
+    }
+  ]
+}
